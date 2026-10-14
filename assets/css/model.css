@@ -1,0 +1,5 @@
+.model-content{max-width:1200px;margin-inline:auto}
+.viewer{position:relative;height:min(70vh,720px);min-height:360px;overflow:hidden;border:1px solid var(--line);background:radial-gradient(circle at 50% 40%,#1a1a1a,var(--bk) 70%)}
+.viewer iframe{position:absolute;left:0;top:-90px;width:100%;height:calc(100% + 180px);border:0}
+.note a{color:var(--red);text-decoration:underline;text-underline-offset:.2em}
+@media(max-width:640px){.viewer{height:55vh;min-height:300px}}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A scroll-driven introduction to Ferrari.">
+  <title>Experience — Ferrari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="ferrari.css">
+  <link rel="stylesheet" href="assets/css/experience.css">
+  <script src="assets/js/common.js" defer></script>
+  <script src="assets/js/experience.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#scrub">Skip to experience</a>
+  <header class="nav">
+    <a href="index.html" class="logo" aria-label="Ferrari home">Ferrari</a>
+    <nav aria-label="Primary">
+      <a href="experience.html" aria-current="page">Experience</a>
+      <a href="model.html">Design</a>
+      <a href="collection.html">Collection</a>
+      <a href="heritage.html">Heritage</a>
+      <a href="contact.html">Test drive</a>
+    </nav>
+  </header>
+  <main>
+    <section class="scrub" id="scrub" aria-label="Scroll through the driving experience">
+      <div class="sticky">
+        <video id="scrub-video" src="assets/scroll-video-smooth.mp4" poster="assets/cards/experience.jpg" muted playsinline preload="auto" aria-hidden="true"></video>
+        <div class="hero-shade"></div>
+        <div class="hero-copy" id="hero-copy">
+          <p class="mono">Serve the best · Ferrari</p>
+          <h1><span class="line"><span>Built to</span></span><span class="line"><span class="red">be felt.</span></span></h1>
+        </div>
+        <p class="ov" data-at="0.18"><span class="mono">01 — Form</span>Air shapes every line.</p>
+        <p class="ov" data-at="0.48"><span class="mono">02 — Sound</span>Twelve cylinders, one voice.</p>
+        <p class="ov" data-at="0.78"><span class="mono">03 — Speed</span>Zero to the horizon.</p>
+        <div class="readout mono"><span id="scroll-hint">Scroll ↓</span><span id="v-time">0:00 / 0:00</span></div>
+        <div class="bar" aria-hidden="true"><i id="scrub-bar"></i></div>
+      </div>
+    </section>
+    <section class="experience-end">
+      <p class="mono">The journey continues</p>
+      <h2>Find your <span class="red">Ferrari.</span></h2>
+      <a class="pill" href="collection.html">Explore the collection</a>
+    </section>
+  </main>
+  <footer><a class="logo" href="index.html">Ferrari</a><span>© 2026 Ferrari — every step u take need a Ferrari.</span><a class="mono" href="index.html">Back to discoveries ↑</a></footer>
+</body>
+</html>

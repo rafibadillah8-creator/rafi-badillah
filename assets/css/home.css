@@ -1,0 +1,20 @@
+.album-intro{padding:clamp(9rem,19vh,15rem) var(--pad) clamp(3rem,7vw,6rem)}
+.album-intro>.mono{color:var(--red);margin-bottom:1rem}
+.album-intro h1{font-size:clamp(4rem,11vw,10rem)}
+.album-lede{max-width:38rem;margin-top:1.5rem;color:var(--dim);font-size:clamp(1rem,1.5vw,1.25rem)}
+.album-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;background:#202020}
+.album-card{position:relative;isolation:isolate;display:grid;place-items:center;min-height:clamp(340px,42vw,620px);overflow:hidden;background:#161616}
+.album-card:last-child{grid-column:1/-1;min-height:clamp(300px,36vw,520px)}
+.album-card>img,.card-shade{position:absolute;inset:0;width:100%;height:100%}
+.album-card>img{z-index:-2;object-fit:cover;transition:transform 1.2s var(--ease),filter .8s}
+.card-shade{z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,.14),rgba(0,0,0,.64) 75%,rgba(0,0,0,.82))}
+.album-card:hover>img,.album-card:focus-visible>img{transform:scale(1.045);filter:saturate(1.15)}
+.card-copy{display:grid;justify-items:center;gap:1rem;padding:2rem;text-align:center}
+.card-copy>.mono{color:var(--wh)}
+.card-copy strong{max-width:14ch;font:400 clamp(2rem,4.5vw,4.5rem)/.98 Anton,Impact,sans-serif;text-transform:uppercase}
+.discover{display:flex;align-items:center;gap:.8rem;font:400 .68rem JetBrains Mono,monospace;letter-spacing:.15em;text-transform:uppercase}
+.discover span{display:grid;place-items:center;width:2.4rem;height:2.4rem;border:1px solid rgba(255,255,255,.65);border-radius:50%;font-size:1rem;transition:background .3s,border-color .3s,transform .4s var(--ease)}
+.album-card:hover .discover span{background:var(--red);border-color:var(--red);transform:rotate(45deg)}
+.album-card--design .card-shade{background:linear-gradient(180deg,rgba(147,75,0,.08),rgba(100,45,0,.46) 48%,rgba(0,0,0,.82))}
+.album-card--heritage .card-shade{background:linear-gradient(180deg,rgba(110,0,0,.08),rgba(60,0,0,.5) 48%,rgba(0,0,0,.82))}
+@media(max-width:680px){.album-grid{grid-template-columns:1fr}.album-card,.album-card:last-child{grid-column:auto;min-height:78svh}.album-card:last-child{min-height:65svh}.album-intro{padding-bottom:2.5rem}}
