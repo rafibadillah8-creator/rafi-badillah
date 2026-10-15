@@ -31,5 +31,5 @@
 .story-title{margin:.8rem 0 1rem;font-size:clamp(2.6rem,5vw,5rem)}
 .story-description{color:var(--dim)}
 .page-disclaimer{margin-top:3rem;font-size:.62rem}
-@media(max-width:760px){.timeline-heading{align-items:flex-start;flex-direction:column}.timeline-hint{text-align:left}.heritage-story{grid-template-columns:1fr;gap:1.5rem}.story-image-wrap{min-height:250px;aspect-ratio:1.5}.story-narration-label{margin-top:1.4rem}}
+@media(max-width:760px){.timeline-heading{align-items:flex-start;flex-direction:column}.timeline-hint{text-align:left}.heritage-story{grid-template-columns:1fr;gap:1.5rem}.story-image-wrap{min-height:0;aspect-ratio:1.5}}
 @media(prefers-reduced-motion:reduce){.era-progress,.era-dot,.era-dot::after,.story-image{transition:none}.milestone-button{animation:none}}
