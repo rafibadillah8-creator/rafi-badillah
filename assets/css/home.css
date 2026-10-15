@@ -18,3 +18,18 @@
 .album-card--design .card-shade{background:linear-gradient(180deg,rgba(147,75,0,.08),rgba(100,45,0,.46) 48%,rgba(0,0,0,.82))}
 .album-card--heritage .card-shade{background:linear-gradient(180deg,rgba(110,0,0,.08),rgba(60,0,0,.5) 48%,rgba(0,0,0,.82))}
 @media(max-width:680px){.album-grid{grid-template-columns:1fr}.album-card,.album-card:last-child{grid-column:auto;min-height:78svh}.album-card:last-child{min-height:65svh}.album-intro{padding-bottom:2.5rem}}
+@media(max-width:760px){
+  .nav--home{mix-blend-mode:normal}
+  .nav--home .logo,.nav--home .menu-toggle{position:relative;z-index:2}
+  .menu-toggle{display:grid;place-content:center;gap:6px;width:44px;height:44px;padding:0;border:1px solid var(--line);border-radius:50%;background:rgb(10 10 10 / 72%);color:var(--wh);cursor:pointer}
+  .menu-toggle span{display:block;width:18px;height:2px;background:currentColor;transition:transform .35s var(--ease)}
+  .nav--home.is-menu-open .menu-toggle span:first-child{transform:translateY(4px) rotate(45deg)}
+  .nav--home.is-menu-open .menu-toggle span:last-child{transform:translateY(-4px) rotate(-45deg)}
+  .nav--home .nav-menu{position:fixed;inset:0;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(1.2rem,5vh,2rem);width:100%;max-width:none;height:100vh;height:100dvh;padding:5rem var(--pad) 3rem;background:var(--bk);visibility:hidden;opacity:0;transform:translateY(-.75rem);pointer-events:none;transition:opacity .35s ease,transform .45s var(--ease),visibility .45s}
+  .nav--home.is-menu-open .nav-menu{visibility:visible;opacity:1;transform:none;pointer-events:auto}
+  .nav--home .nav-menu a{font:400 clamp(1.6rem,8vw,2.4rem)/1 Anton,Impact,sans-serif;letter-spacing:.08em}
+  .nav--home .nav-menu a::after{bottom:-.45rem}
+  .nav--home .nav-menu a[aria-current=page]{color:var(--red)}
+  body.menu-open{overflow:hidden}
+}
+@media(min-width:761px){.menu-toggle{display:none}}
